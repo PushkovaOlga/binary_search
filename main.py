@@ -1,9 +1,8 @@
 #напишите программу для бинарного поиска загаданного числа
 
-user_num = int(input("Введите число: "))
 def binary_search():
-    min_num = 0
-    max_num = 100
+    min_num = int(input("Введите минимальное число"))
+    max_num = int(input("Введите максимальное число"))
     center = (min_num + max_num) // 2
 
     while True:
