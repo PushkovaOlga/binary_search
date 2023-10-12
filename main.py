@@ -1,21 +1,8 @@
-def binary_search(arr, target):
-    left, right = 0, len(arr) - 1
-
-    while left <= right:
-        mid = (left + right) // 2
-        if arr[mid] == target:
-            return mid
-        elif arr[mid] < target:
-            left = mid + 1
-        else:
-            right = mid - 1
-
-    return -1
-
-arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-target = 5
-result = binary_search(arr, target)
-if result != -1:
-    print(f"Число {target} найдено {result}.")
-else:
-    print(f"Число {target} не найдено.")
+def triangle(n):
+    if n % 2 == 0:
+        print("Пожалуйста, введите нечетное натуральное число.")
+    else:
+        for i in range(1, n // 2 + 2):
+            print("*" * i)
+        for i in range(n // 2, 0, -1):
+            print("*" * i)
